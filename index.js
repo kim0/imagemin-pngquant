@@ -81,5 +81,4 @@ const imageminPngquant = (options = {}) => input => {
 	return subprocess.stdout;
 };
 
-module.exports = imageminPngquant;
-module.exports.default = imageminPngquant;
+export default imageminPngquant;
