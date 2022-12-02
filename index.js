@@ -1,9 +1,8 @@
-'use strict';
-const execa = require('execa');
-const isPng = require('is-png');
-const isStream = require('is-stream');
-const pngquant = require('pngquant-bin');
-const ow = require('ow');
+import execa from 'execa';
+import isPng from 'is-png';
+import isStream from 'is-stream';
+import pngquant from 'pngquant-bin';
+import ow from 'ow';
 
 const imageminPngquant = (options = {}) => input => {
 	const isBuffer = Buffer.isBuffer(input);
